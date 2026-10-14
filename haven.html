@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>발로란트 맵별 요원 추천 - Haven</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet"/>
+<style>
+    body { font-family: 'Noto Sans KR', 'Inter', sans-serif; background-color: #0F1923; color: #ece8e1; }
+    .font-gabarito { font-family: 'Gabarito', sans-serif; }
+    .valorant-red { color: #FF4655; }
+    .bg-valorant-red { background-color: #FF4655; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0F1923; }
+    ::-webkit-scrollbar-thumb { background: #3F5161; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #FF4655; }
+</style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-[#16212D] border-b border-[#3F5161] sticky top-0 z-50">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-[60px] h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-5 h-4 bg-[#FF4655] transform rotate-45 origin-top-left mt-1"></div>
+                <h1 class="text-xl font-gabarito font-bold text-white tracking-wide">발로란트 전략 가이드</h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="maps.html" class="text-[#9CA9B6] hover:text-white transition-colors font-medium">맵 가이드</a>
+                <a href="haven.html" class="text-[#FF4655] font-medium">Haven</a>
+                <a href="agents.html" class="text-[#9CA9B6] hover:text-white transition-colors font-medium">요원 데이터</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-1 max-w-[1440px] mx-auto w-full px-6 lg:px-[60px] py-10">
+        <div class="mb-10">
+            <h2 class="text-4xl font-gabarito font-bold text-white mb-2">Haven 맵 전략 가이드</h2>
+            <p class="text-[#9CA9B6]">3개의 폭탄 사이트(A · B · C)를 가진 클래식 맵. 넓은 공간과 긴 시야 싸움이 특징입니다.</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8 mb-12">
+            <div class="bg-[#1F2E3B] border border-[#3F5161] rounded-xl p-6">
+                <h3 class="text-xl font-bold text-white mb-4">추천 공격 요원</h3>
+                <ul class="space-y-3 text-[#9CA9B6]">
+                    <li><span class="text-white font-medium">제트</span> – 빠른 진입과 대시로 A/C 사이트 돌파</li>
+                    <li><span class="text-white font-medium">레이즈</span> – 수류탄과 페인트로 사이트 클리어</li>
+                    <li><span class="text-white font-medium">소바</span> – 정찰 화살로 정보 수집 후 진입</li>
+                    <li><span class="text-white font-medium">브림스톤</span> – 연막으로 안전한 플랜트</li>
+                </ul>
+            </div>
+            <div class="bg-[#1F2E3B] border border-[#3F5161] rounded-xl p-6">
+                <h3 class="text-xl font-bold text-white mb-4">추천 수비 요원</h3>
+                <ul class="space-y-3 text-[#9CA9B6]">
+                    <li><span class="text-white font-medium">사이퍼</span> – 카메라와 트랩으로 사이트 감시</li>
+                    <li><span class="text-white font-medium">킬조이</span> – 터렛과 나노스웜으로 앵커</li>
+                    <li><span class="text-white font-medium">바이퍼</span> – 월과 연막으로 사이트 분할</li>
+                    <li><span class="text-white font-medium">세이지</span> – 월로 로테 차단 및 힐</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-[#1F2E3B] border border-[#3F5161] rounded-xl p-6">
+            <h3 class="text-xl font-bold text-white mb-4">핵심 전략 포인트</h3>
+            <div class="grid md:grid-cols-3 gap-6 text-sm text-[#9CA9B6]">
+                <div>
+                    <h4 class="text-white font-medium mb-2">A 사이트</h4>
+                    <p>긴 레인과 A 롱. 스모크와 유틸로 진입 필수. 수비 시 박스 활용.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-2">B 사이트</h4>
+                    <p>좁은 입구. 윈도우와 커넥터 컨트롤이 핵심. 빠른 로테 가능.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-2">C 사이트</h4>
+                    <p>넓은 오픈 공간. 오퍼레이터 싸움이 자주 발생. 연막으로 시야 차단.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="border-t border-[#3F5161] py-6 text-center text-sm text-[#9CA9B6]">Valorant Strategy Guide</footer>
+</body>
+</html>

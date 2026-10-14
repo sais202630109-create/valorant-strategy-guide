@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발로란트 맵 가이드 & 추천 요원</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #0F1923; color: #ece8e1; }
+        .valorant-red { color: #FF4655; }
+        .bg-valorant-red { background-color: #FF4655; }
+        .map-card { background-color: rgba(31, 46, 59, 0.7); border: 1px solid #3F5161; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+        .map-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(255, 70, 85, 0.2); border-color: #FF4655; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-[#16212D] border-b border-[#3F5161] sticky top-0 z-50">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-[60px] h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-5 h-4 bg-[#FF4655] transform rotate-45 origin-top-left mt-1"></div>
+                <h1 class="text-xl font-bold text-white tracking-wide">발로란트 전략 가이드</h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="maps.html" class="text-[#FF4655] font-medium">맵 가이드</a>
+                <a href="haven.html" class="text-[#9CA9B6] hover:text-white transition-colors font-medium">Haven</a>
+                <a href="agents.html" class="text-[#9CA9B6] hover:text-white transition-colors font-medium">요원 데이터</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-1 max-w-[1440px] mx-auto w-full px-6 lg:px-[60px] py-10">
+        <div class="mb-10 text-center">
+            <h2 class="text-4xl font-bold text-white mb-3">맵 가이드 & 추천 요원</h2>
+            <p class="text-[#9CA9B6]">각 맵에 적합한 요원과 전략을 확인하세요</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="haven.html" class="map-card rounded-xl p-6 block">
+                <h3 class="text-2xl font-bold text-white mb-2">Haven</h3>
+                <p class="text-sm text-[#9CA9B6] mb-4">3사이트 맵 · 넓은 공간 · 전략가 유리</p>
+                <span class="inline-block bg-valorant-red text-white text-xs px-3 py-1 rounded-full">상세 보기 →</span>
+            </a>
+            <div class="map-card rounded-xl p-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Bind</h3>
+                <p class="text-sm text-[#9CA9B6] mb-4">2사이트 · 텔레포터 · 빠른 로테</p>
+                <div class="text-xs text-[#9CA9B6]">추천: 레이즈, 브림스톤, 사이퍼</div>
+            </div>
+            <div class="map-card rounded-xl p-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Ascent</h3>
+                <p class="text-sm text-[#9CA9B6] mb-4">미들 컨트롤 · 도어 활용</p>
+                <div class="text-xs text-[#9CA9B6]">추천: 소바, 킬조이, 제트</div>
+            </div>
+            <div class="map-card rounded-xl p-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Split</h3>
+                <p class="text-sm text-[#9CA9B6] mb-4">수직성 · 로프 · 미드 중요</p>
+                <div class="text-xs text-[#9CA9B6]">추천: 레이나, 사이퍼, 아스트라</div>
+            </div>
+            <div class="map-card rounded-xl p-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Lotus</h3>
+                <p class="text-sm text-[#9CA9B6] mb-4">3사이트 · 로테이팅 도어</p>
+                <div class="text-xs text-[#9CA9B6]">추천: 페이드, 게코, 바이퍼</div>
+            </div>
+            <div class="map-card rounded-xl p-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Sunset</h3>
+                <p class="text-sm text-[#9CA9B6] mb-4">도시 맵 · 미드 싸움</p>
+                <div class="text-xs text-[#9CA9B6]">추천: 아이소, 네온, 사이퍼</div>
+            </div>
+        </div>
+    </main>
+    <footer class="border-t border-[#3F5161] py-6 text-center text-sm text-[#9CA9B6]">Valorant Strategy Guide</footer>
+</body>
+</html>
